@@ -22,7 +22,7 @@ The final thesis can be downloaded [here](https://www.dropbox.com/s/70h3wlgfnekm
 
 The built demos for mac and windows can be found here:
 - [Windows](https://www.dropbox.com/s/92mu31fm14839cn/Demo%20Windows.zip?dl=0)
-- [Mac](https://www.dropbox.com/s/92mu31fm14839cn/Demo%20Windows.zip?dl=0)
+- [Mac](https://www.dropbox.com/s/gmbp2s48glo8u8r/Demo%20Mac.zip?dl=0)
 
 # Unity Project
 
