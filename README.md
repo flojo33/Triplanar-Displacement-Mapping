@@ -18,6 +18,12 @@ Height-Mapping ist die am häufigsten verwendete Methode, um in Spielen oder Sim
 
 The final thesis can be downloaded [here](https://www.dropbox.com/s/70h3wlgfnekm35o/Florian%20Bayer%20-%20Triplanar%20Displacement%20Mapping%20for%20Terrain%20Rendering.pdf?dl=0).
 
-# Unity Demo
+# Demo Download
 
-This demo Project was implemented in Unity 3D. To run the program simply pull and open the project inside the Unity editor. The project was tested for Windows and Mac. Mobile platforms are currently not supported because tessellation and other high-level shader features are not available there.
+The built demos for mac and windows can be found here:
+- [Windows](https://www.dropbox.com/s/92mu31fm14839cn/Demo%20Windows.zip?dl=0)
+- [Mac](https://www.dropbox.com/s/92mu31fm14839cn/Demo%20Windows.zip?dl=0)
+
+# Unity Project
+
+This demo Project was implemented in Unity 3D. To open the source of the project simply pull and open the main scene inside the Unity editor. The project was tested for Windows and Mac. Mobile platforms are currently not supported because tessellation and other high-level shader features are not available there.
