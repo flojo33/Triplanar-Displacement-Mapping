@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e391165634fcb764e8f49b5dd7421c5a, type: 3}
+  m_Name: Ice
+  m_EditorClassIdentifier: 
+  albedo: {fileID: 2800000, guid: 57b921040ce9f1343b04a7613a2db189, type: 3}
+  albedoColor: {r: 1, g: 1, b: 1, a: 1}
+  emission: {fileID: 0}
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
+  occlusion: {fileID: 2800000, guid: 4be13452d65b1634b84d19a0a91ab16c, type: 3}
+  specular: {fileID: 2800000, guid: 28ffc2004b271f54baedd2fa3bbdce1d, type: 3}
+  specularScale: 1
+  specularPower: 0
+  metallic: {fileID: 0}
+  metallicScale: 0
+  detailNormalMap: {fileID: 0}
+  detailNormalStrength: 0
+  height: {fileID: 2800000, guid: 15ed69e8b34bd38478a2897ff018e664, type: 3}
+  heightScale: 1
+  heightOffset: 0
+  maxTessellation: 0.496
+  displacementOffset: {x: 0, y: 0}
+  displacementScale: {x: 0.01, y: 0.01}
+  textureOffset: {x: 0, y: 0}
+  textureScale: {x: 0.01, y: 0.01}

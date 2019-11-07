@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e391165634fcb764e8f49b5dd7421c5a, type: 3}
+  m_Name: RED
+  m_EditorClassIdentifier: 
+  albedo: {fileID: 2800000, guid: 6263d6480ea09d74bb9ed06805f3e424, type: 3}
+  albedoColor: {r: 1, g: 0, b: 0, a: 1}
+  emission: {fileID: 0}
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
+  occlusion: {fileID: 0}
+  specular: {fileID: 0}
+  specularScale: 0
+  specularPower: 1
+  metallic: {fileID: 0}
+  metallicScale: 0
+  detailNormalMap: {fileID: 0}
+  height: {fileID: 2800000, guid: d59f780bad9362b4b907e49f1bf0c9a6, type: 3}
+  heightScale: 0
+  heightOffset: 0
+  heightPower: 0
+  maxTessellation: 1
+  displacementOffset: {x: 0.5, y: 0.5}
+  displacementScale: {x: 0.05, y: 0.05}
+  textureOffset: {x: 0, y: 0}
+  textureScale: {x: 0.2, y: 0.2}

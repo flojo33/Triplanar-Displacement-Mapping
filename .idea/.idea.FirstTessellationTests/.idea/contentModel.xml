@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="CustomShader" t="Include">
+          <e p="CustomBase.cginc" t="Include" />
+          <e p="CustomShadowCaster.cginc" t="Include" />
+          <e p="CustomStandard.shader" t="Include" />
+          <e p="CustomTesselation.cginc" t="Include" />
+          <e p="CustomTriplanarBase.cginc" t="Include" />
+          <e p="CustomTriplanarShadowCaster.cginc" t="Include" />
+          <e p="CustomTriplanarStandard.shader" t="Include" />
+          <e p="CustomUtilities.cginc" t="Include" />
+          <e p="ReferenceStandard.shader" t="Include" />
+        </e>
+        <e p="DiamondSquare.cs" t="Include" />
+        <e p="Rotate.cs" t="Include" />
+        <e p="terrainTile.cs" t="Include" />
+        <e p="Tesselation" t="Include">
+          <e p="TessellationTest.shader" t="Include" />
+        </e>
+        <e p="Triplanar" t="Include">
+          <e p="Triplanar.shader" t="Include" />
+          <e p="TriplanarTutorial.shader" t="Include" />
+        </e>
+      </e>
+      <e p="FirstTessellationTests.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_FirstTessellationTests.1839512172.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+  </component>
+</project>

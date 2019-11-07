@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e391165634fcb764e8f49b5dd7421c5a, type: 3}
+  m_Name: GrassFloor
+  m_EditorClassIdentifier: 
+  albedo: {fileID: 2800000, guid: 5d6d86bdb13ba46fe948e1da73873bbf, type: 3}
+  albedoColor: {r: 0.75840855, g: 1, b: 0.7311321, a: 1}
+  emission: {fileID: 0}
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
+  occlusion: {fileID: 2800000, guid: 80b842204e18142f7999fdc818fd7100, type: 3}
+  specular: {fileID: 2800000, guid: 98e43c0d8fcbd43b3ac8e6b95f148cf7, type: 3}
+  specularScale: 1
+  specularPower: 0.59
+  metallic: {fileID: 0}
+  metallicScale: 0
+  detailNormalMap: {fileID: 2800000, guid: 6569d2242762246d3956b31cb5593182, type: 3}
+  height: {fileID: 2800000, guid: 7d1a4e4d5316845f69c1cbb30b8ac5c9, type: 3}
+  heightScale: 0.069
+  heightOffset: 0
+  heightPower: 1
+  maxTessellation: 0
+  displacementOffset: {x: 0, y: 0}
+  displacementScale: {x: 1, y: 1}
+  textureOffset: {x: 0, y: 0}
+  textureScale: {x: 0.2, y: 0.2}

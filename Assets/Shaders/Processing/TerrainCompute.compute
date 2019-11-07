@@ -1,0 +1,62 @@
+﻿#include "./terrainProcessor.cginc"
+//Struct containing the position and normal of the output vertices
+struct PositionNormalPair
+{
+	float3 position;
+	float3 normal;
+};
+
+int _size;
+int _startX;
+int _startY;
+float _gridSize;
+bool _splat;
+RWStructuredBuffer<PositionNormalPair> _Data;
+RWTexture2D<float4> _splatTexture;
+RWTexture2D<float4> _tessellationTexture;
+
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel TerrainGeneratorPass1
+[numthreads(8,1,1)]
+void TerrainGeneratorPass1 (uint3 id : SV_DispatchThreadID)
+{
+    int y = (id.x / _size)-1;
+    int x = (id.x % _size)-1;
+    float2 position = float2((x + _startX) * _gridSize, (y + _startY) * _gridSize);
+    float2 localPosition = float2(x * _gridSize, y * _gridSize);
+    float heightCenter = GetHeightAtPoint(position);
+    _Data[id.x].position = /*float3(localPosition.x, 0, localPosition.y); */ float3(localPosition.x, heightCenter, localPosition.y);
+}
+ 
+#pragma kernel TerrainGeneratorPass2
+[numthreads(8,1,1)]
+void TerrainGeneratorPass2 (uint3 id : SV_DispatchThreadID)
+{
+    int y = id.x / _size;
+    int x = id.x % _size;
+    float3 normal;
+    if(x > 0 && x < _size - 1 && y > 0 && y < _size - 1) {
+        float l = _Data[(x - 1) + _size * (y + 0)].position.y;
+        float r = _Data[(x + 1) + _size * (y + 0)].position.y;
+        float b = _Data[(x + 0) + _size * (y - 1)].position.y;
+        float t = _Data[(x + 0) + _size * (y + 1)].position.y;
+        float dx = 2 * (r - l);
+        float dy = 2 * (t - b);
+        float up = -4.0f * _gridSize;
+        normal = -normalize(float3(dx, up, dy) * 0.25f);
+    }
+    else
+    {
+        normal = float3(0,1,0);
+    }
+    float2 position = float2((x - 1 + _startX) * _gridSize, (y - 1 + _startY) * _gridSize);
+    float4 splat;
+    if(!_splat) {
+        splat = float4(1,0,0,0);
+    } else {
+        splat = GetSplatAtPoint(position, _Data[id.x].position.y);
+    }
+    _splatTexture[uint2(x,y)] = splat;
+    _tessellationTexture[uint2(x,y)] = GetTessellationStrength(splat, normal);
+    _Data[id.x].normal = normal;
+}

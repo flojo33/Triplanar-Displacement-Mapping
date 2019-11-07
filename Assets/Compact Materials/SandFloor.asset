@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e391165634fcb764e8f49b5dd7421c5a, type: 3}
+  m_Name: SandFloor
+  m_EditorClassIdentifier: 
+  albedo: {fileID: 2800000, guid: 58a8021c2add44813837da2551371558, type: 3}
+  albedoColor: {r: 1, g: 1, b: 1, a: 1}
+  emission: {fileID: 0}
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
+  occlusion: {fileID: 2800000, guid: 6e6f015dd151f49a59419b0f4ec10935, type: 3}
+  specular: {fileID: 2800000, guid: 96dd49f6d09474a6dbbbccd3cf246ea0, type: 3}
+  specularScale: 1
+  specularPower: 1
+  metallic: {fileID: 2800000, guid: 96dd49f6d09474a6dbbbccd3cf246ea0, type: 3}
+  metallicScale: 0.435
+  detailNormalMap: {fileID: 2800000, guid: 5cf52d36780ec488388b3e845fa1d2e6, type: 3}
+  height: {fileID: 2800000, guid: 0fee0585de46841998b6f0d7507b13c0, type: 3}
+  heightScale: 0
+  heightOffset: 0
+  heightPower: 0
+  maxTessellation: 0
+  displacementOffset: {x: 0, y: 0}
+  displacementScale: {x: 1, y: 1}
+  textureOffset: {x: 0, y: 0}
+  textureScale: {x: 0.02, y: 0.02}

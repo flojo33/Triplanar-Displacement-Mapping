@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eece069c-5609-4e91-95df-ae913891d51e" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Etc/CameraMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/Processing/NormalBlit.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/TriplanarCompactMaterial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/TriplanarSplatCompactMaterial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/CompactMaterial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/Processing/DetailBlit.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/DeferredShading.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/TriplanarDisplacementMappingBase.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/Processing/AlbedoBlit.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Processing/terrainProcessor.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainTileData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/TriplanarDisplacementMappingShadowCaster.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/TriplanarDisplacementMapping.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terrain/IntegerCoordinate2D.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Utilities.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Etc/FpsCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terrain/Collisions/TerrainCollisionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/TerrainControllerEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainGeneratorSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/SplatUtilities.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Processing/TerrainCompute.compute" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Etc/ShaderInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terrain/Collisions/TerrainCollisionTile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Processing/simplexNoise.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Etc/Sun.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainUtilities.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Tessellation.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terrain/Collisions/TerrainCollisionUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/CameraScreenCaptureEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Processing/TerrainColliderCompute.compute" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terrain/Collisions/TriplanarTerrainCollider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainGPUGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terrain/Collisions/TerrainCollisionGPUGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Processing/noise.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Assets/Editor/CompactMaterialEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainCPUGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Sphere.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainTile.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/Processing/terrainProcessor.cginc" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/TestCompute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/ChunkCoordinate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainGeneratorSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/TesselationSetup.cginc" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainTileCoordinate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Etc/FPSCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Etc/FpsCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/Processing/TerrainCPUGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/Processing/TerrainGPUGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/Processing/TerrainCompute.compute" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/Processing/TerrainGPUGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Assets/TriplanarSplatCompactMaterial.cs" />
+        <option value="$PROJECT_DIR$/Assets/VectorTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/Tesselation.cginc" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainTileData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/SplatUtilities.cginc" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/DeferredLighting.shader" />
+        <option value="$PROJECT_DIR$/Assets/Sun.cs" />
+        <option value="$PROJECT_DIR$/Assets/ShaderInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainCPUGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Assets/Processing/DetailBlit.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Assets/CompactMaterial.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/TriplanarDisplacementMapping.shader" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/DeferredShading.shader" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/TriplanarDisplacementMappingShadowCaster.cginc" />
+        <option value="$PROJECT_DIR$/Assets/randomLightColor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/Sphere.shader" />
+        <option value="$PROJECT_DIR$/Assets/ShootSphere.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Etc/ShaderInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/Utilities.cginc" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/Tessellation.cginc" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Etc/CameraMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/Collisions/TriplanarTerrainCollider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/IntegerCoordinate2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/Collisions/TerrainCollider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/TerrainControllerEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/Processing/TerrainCompute.compute" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/Collisions/TerrainCollisionUser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainCollisionTileData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainUtilities.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/Collisions/TerrainCollisionTileData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/Collisions/TerrainCollisionController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/Collisions/TerrainCollisionTile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/Collisions/TerrainCollisionGPUGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/Processing/TerrainColliderCompute.compute" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainTile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/TriplanarDisplacementMappingBase.cginc" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/Processing/terrainProcessor.cginc" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/TerrainGPUGenerator.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1PY3VPUEPbuBfEr6nheFMxxjwVR" />
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="17968">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="17968" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eece069c-5609-4e91-95df-ae913891d51e" name="Default Changelist" comment="" />
+      <created>1561744541069</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561744541069</updated>
+      <workItem from="1561744545067" duration="456000" />
+      <workItem from="1561823510188" duration="895000" />
+      <workItem from="1562579053503" duration="10613000" />
+      <workItem from="1562667131950" duration="14047000" />
+      <workItem from="1562782611295" duration="3205000" />
+      <workItem from="1562829094223" duration="17907000" />
+      <workItem from="1562850825784" duration="843000" />
+      <workItem from="1562865240599" duration="1661000" />
+      <workItem from="1563258507876" duration="512000" />
+      <workItem from="1563274712339" duration="474000" />
+      <workItem from="1563638511438" duration="1513000" />
+      <workItem from="1563715553711" duration="9932000" />
+      <workItem from="1565074737937" duration="30189000" />
+      <workItem from="1565252090670" duration="24926000" />
+      <workItem from="1565519222878" duration="6215000" />
+      <workItem from="1565539650988" duration="5541000" />
+      <workItem from="1565593562547" duration="17390000" />
+      <workItem from="1565623322276" duration="5430000" />
+      <workItem from="1565641694138" duration="6661000" />
+      <workItem from="1565704637745" duration="9456000" />
+      <workItem from="1565866111037" duration="16061000" />
+      <workItem from="1565946414308" duration="4581000" />
+      <workItem from="1565956513584" duration="13556000" />
+      <workItem from="1566037232063" duration="3535000" />
+      <workItem from="1566045145879" duration="1789000" />
+      <workItem from="1566047722274" duration="202000" />
+      <workItem from="1566325062318" duration="336000" />
+      <workItem from="1566379718161" duration="6759000" />
+      <workItem from="1566656973114" duration="642000" />
+      <workItem from="1566729751586" duration="1337000" />
+      <workItem from="1566904199799" duration="2548000" />
+      <workItem from="1567339917286" duration="1310000" />
+      <workItem from="1567422804238" duration="14887000" />
+      <workItem from="1567527863488" duration="1856000" />
+      <workItem from="1567531167496" duration="8365000" />
+      <workItem from="1567584344820" duration="593000" />
+      <workItem from="1567585558234" duration="106000" />
+      <workItem from="1567585729258" duration="7307000" />
+      <workItem from="1567596059136" duration="7371000" />
+      <workItem from="1567610856139" duration="5045000" />
+      <workItem from="1567675289885" duration="6737000" />
+      <workItem from="1567686496025" duration="5311000" />
+      <workItem from="1567759042006" duration="987000" />
+      <workItem from="1567762838887" duration="933000" />
+      <workItem from="1568015423965" duration="16910000" />
+      <workItem from="1568047055318" duration="802000" />
+      <workItem from="1568129465501" duration="1324000" />
+      <workItem from="1568185732794" duration="1805000" />
+      <workItem from="1568188279519" duration="2181000" />
+      <workItem from="1568201273342" duration="24354000" />
+      <workItem from="1568269823188" duration="24490000" />
+      <workItem from="1568360895413" duration="12130000" />
+      <workItem from="1568383976044" duration="1843000" />
+      <workItem from="1568387218417" duration="465000" />
+      <workItem from="1568388464102" duration="393000" />
+      <workItem from="1568405474580" duration="14691000" />
+      <workItem from="1568462908755" duration="10379000" />
+      <workItem from="1568475018470" duration="2518000" />
+      <workItem from="1568477875542" duration="11577000" />
+      <workItem from="1568546070852" duration="913000" />
+      <workItem from="1568553021234" duration="608000" />
+      <workItem from="1568554571995" duration="9907000" />
+      <workItem from="1568630711629" duration="6071000" />
+      <workItem from="1568646406150" duration="1995000" />
+      <workItem from="1568708787516" duration="4499000" />
+      <workItem from="1568713397929" duration="17669000" />
+      <workItem from="1568733341582" duration="259000" />
+      <workItem from="1568792386606" duration="1854000" />
+      <workItem from="1568797322677" duration="13409000" />
+      <workItem from="1568828509901" duration="6250000" />
+      <workItem from="1568837505465" duration="2571000" />
+      <workItem from="1568884012980" duration="9492000" />
+      <workItem from="1568894764951" duration="2119000" />
+      <workItem from="1568897507525" duration="31300000" />
+      <workItem from="1568980103793" duration="12624000" />
+      <workItem from="1569049526889" duration="50760000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="445" y="263" key="SettingsEditor" />
+    <state x="445" y="263" key="SettingsEditor/3840.2400" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e391165634fcb764e8f49b5dd7421c5a, type: 3}
+  m_Name: JungleRock
+  m_EditorClassIdentifier: 
+  albedo: {fileID: 2800000, guid: 571ec05bab9ccd04090e10ad86ba307a, type: 3}
+  albedoColor: {r: 1, g: 1, b: 1, a: 1}
+  emission: {fileID: 0}
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
+  occlusion: {fileID: 2800000, guid: 1e324e5df58575f439e0712492965690, type: 3}
+  specular: {fileID: 2800000, guid: c0ef6c17ff5439a4fae35316526b75d7, type: 3}
+  specularScale: 1
+  specularPower: 2.1
+  metallic: {fileID: 2800000, guid: 1c00d434aa6388a4dad759705dda6755, type: 3}
+  metallicScale: 0.493
+  detailNormalMap: {fileID: 2800000, guid: 61bb0a82d8fbf7c4a9806fbae5055a32, type: 3}
+  detailNormalStrength: 0.16
+  height: {fileID: 2800000, guid: 2ec8abd382021fd47a8fd62ddfe6d997, type: 3}
+  heightScale: 0.275
+  heightOffset: 0
+  maxTessellation: 1
+  displacementOffset: {x: 0, y: 0}
+  displacementScale: {x: 0.005, y: 0.005}
+  textureOffset: {x: 0, y: 0}
+  textureScale: {x: 0.05, y: 0.05}

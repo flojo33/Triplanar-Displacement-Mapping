@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="FireflyNodes" t="Include">
+          <e p="Node.cs" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Assets" t="Include">
+            <e p="CompactMaterial.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="CompactMaterialEditor.cs" t="Include" />
+            </e>
+            <e p="Processing" t="Include">
+              <e p="AlbedoBlit.shader" t="Include" />
+              <e p="DetailBlit.shader" t="Include" />
+              <e p="ProcessingHelper.cginc" t="Include" />
+              <e p="SurfaceBlit.shader" t="Include" />
+            </e>
+            <e p="TriplanarCompactMaterial.cs" t="Include" />
+            <e p="TriplanarSplatCompactMaterial.cs" t="Include" />
+          </e>
+          <e p="Editor" t="Include">
+            <e p="CameraScreenCaptureEditor.cs" t="Include" />
+            <e p="TerrainControllerEditor.cs" t="Include" />
+          </e>
+          <e p="Etc" t="Include">
+            <e p="CameraMovement.cs" t="Include" />
+            <e p="CameraScreenCapture.cs" t="Include" />
+            <e p="KillTimer.cs" t="Include" />
+            <e p="RadiusSpawner.cs" t="Include" />
+            <e p="RandomLightColor.cs" t="Include" />
+            <e p="ShootSphere.cs" t="Include" />
+            <e p="StatDisplay.cs" t="Include" />
+            <e p="Sun.cs" t="Include" />
+            <e p="UI" t="Include">
+              <e p="BooleanInput.cs" t="Include" />
+              <e p="ButtonInput.cs" t="Include" />
+              <e p="DividerInput.cs" t="Include" />
+              <e p="SettingsPanel.cs" t="Include" />
+              <e p="SliderInput.cs" t="Include" />
+            </e>
+            <e p="wireframeRenderer.cs" t="Include" />
+          </e>
+          <e p="Terrain" t="Include">
+            <e p="Collisions" t="Include">
+              <e p="TerrainCollisionController.cs" t="Include" />
+              <e p="TerrainCollisionGPUGenerator.cs" t="Include" />
+              <e p="TerrainCollisionTile.cs" t="Include" />
+              <e p="TerrainCollisionUser.cs" t="Include" />
+            </e>
+            <e p="IntegerCoordinate2D.cs" t="Include" />
+            <e p="TerrainController.cs" t="Include" />
+            <e p="TerrainCPUGenerator.cs" t="Include" />
+            <e p="TerrainGeneratorSettings.cs" t="Include" />
+            <e p="TerrainGPUGenerator.cs" t="Include" />
+            <e p="TerrainTile.cs" t="Include" />
+            <e p="TerrainTileData.cs" t="Include" />
+            <e p="TerrainUtilities.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="DeferredShading.shader" t="Include" />
+          <e p="Processing" t="Include">
+            <e p="noise.cginc" t="Include" />
+            <e p="TerrainColliderCompute.compute" t="Include" />
+            <e p="TerrainCompute.compute" t="Include" />
+            <e p="terrainProcessor.cginc" t="Include" />
+          </e>
+          <e p="Sphere.shader" t="Include" />
+          <e p="SplatUtilities.cginc" t="Include" />
+          <e p="Tessellation.cginc" t="Include" />
+          <e p="TriplanarDisplacementMapping.shader" t="Include" />
+          <e p="TriplanarDisplacementMappingBase.cginc" t="Include" />
+          <e p="TriplanarDisplacementMappingShadowCaster.cginc" t="Include" />
+          <e p="TriplanarDisplacementMappingWireframe.shader" t="Include" />
+          <e p="Utilities.cginc" t="Include" />
+        </e>
+        <e p="Textures" t="Include">
+          <e p="3dtextures" t="Include">
+            <e p="CREDIT.txt" t="Include" />
+          </e>
+          <e p="FreePBR" t="Include">
+            <e p="CREDIT.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Master Arbeit Repo.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_Master Arbeit Repo.-1388127919.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+  </component>
+</project>

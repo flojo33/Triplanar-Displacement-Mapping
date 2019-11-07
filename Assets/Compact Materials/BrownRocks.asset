@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e391165634fcb764e8f49b5dd7421c5a, type: 3}
+  m_Name: BrownRocks
+  m_EditorClassIdentifier: 
+  albedo: {fileID: 2800000, guid: a6080090af51544d59db9d7805e25820, type: 3}
+  albedoColor: {r: 1, g: 1, b: 1, a: 1}
+  emission: {fileID: 2800000, guid: e858cc48215d1e340a2eccc3448bac6b, type: 3}
+  emissionColor: {r: 0, g: 0, b: 0, a: 1}
+  occlusion: {fileID: 2800000, guid: 7aad7a6fa4885449c818f10f9c70bb36, type: 3}
+  specular: {fileID: 2800000, guid: e653ef62201884ffc8e7bc0d3a2a3fe1, type: 3}
+  specularScale: 1
+  specularPower: 0.43
+  metallic: {fileID: 2800000, guid: e653ef62201884ffc8e7bc0d3a2a3fe1, type: 3}
+  metallicScale: 0.394
+  detailNormalMap: {fileID: 2800000, guid: 801c99a0bbce04d549afd3119e96ed79, type: 3}
+  detailNormalStrength: 1
+  height: {fileID: 2800000, guid: 6bcf1923c39a145168f2ec3a03359127, type: 3}
+  heightScale: 1
+  heightOffset: 0
+  maxTessellation: 1
+  displacementOffset: {x: 0, y: 0}
+  displacementScale: {x: 0.005, y: 0.005}
+  textureOffset: {x: 0, y: 0}
+  textureScale: {x: 0.05, y: 0.05}

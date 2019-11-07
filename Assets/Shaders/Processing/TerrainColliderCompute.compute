@@ -1,0 +1,25 @@
+﻿#include "./terrainProcessor.cginc"
+
+//Struct containing the position and normal of the output vertices
+struct BaseData
+{
+	float3 position;
+	float3 normal;
+	float4 splat;
+};
+
+uint _size;
+
+RWStructuredBuffer<BaseData> _BaseData;
+RWStructuredBuffer<float> _FullData;
+
+#pragma kernel ComputeOffsets
+[numthreads(8,1,1)]
+void ComputeOffsets (uint3 id : SV_DispatchThreadID)
+{
+    if(id.x < _size) {
+		float displacement = GetDisplacementAtPoint(_BaseData[id.x].position, _BaseData[id.x].normal, _BaseData[id.x].splat);
+		
+        _FullData[id.x] = displacement;
+    }
+}
