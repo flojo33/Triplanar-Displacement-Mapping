@@ -16,7 +16,7 @@ Height-Mapping ist die am häufigsten verwendete Methode, um in Spielen oder Sim
 
 # Thesis
 
-The final Thesis can be downloaded [here](http://florian.diebayers.de/master/thesis.pdf).
+The final thesis can be downloaded [here](http://florian.diebayers.de/master/thesis.pdf).
 
 # Unity Demo
 
