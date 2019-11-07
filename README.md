@@ -13,3 +13,11 @@ The biggest downsides of triplanar displacement mapping are collisions and perfo
 # Kurzfassung
 
 Height-Mapping ist die am häufigsten verwendete Methode, um in Spielen oder Simulationen Landschaften einfach und schnell zu generieren. Allerdings bietet sie nur wenige Möglichkeiten Details entlang steiler Klippen und Bergseiten zu erstellen. Diese Arbeit stellt eine Kombination aus Triplanarem Mapping, Displacement Mapping und Tesselierung vor, die es ermöglicht in diesen Bereichen mehr Geometrie hinzuzufügen. Die größten Probleme von Triplanarem Displacement Mapping stellen die benötigte Rechenleistung, sowie Kollisionen dar. Einige Lösungsansätze zu diesen Problemen, wie zum Beispiel distanzbasiertes Ein- und Ausblenden von Details, dynamische Tesselierungsmaps und Echtzeit-tesselierte Kollisionsgeometrie werden präsentiert und evaluiert.
+
+# Thesis
+
+The final Thesis can be downloaded [here](http://florian.diebayers.de/master/thesis.pdf).
+
+# Unity Demo
+
+This demo Project was implemented in Unity 3D. To run the program simply pull and open the project inside the Unity editor. The project was tested for Windows and Mac. Mobile platforms are currently not supported because tessellation and other high-level shader features are not available there.
