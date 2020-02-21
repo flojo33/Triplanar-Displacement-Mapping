@@ -164,7 +164,7 @@ namespace Terrain.Collisions
 						_initialNormals[x + _controller.collisionBlockVertexCount * y] =
 							mainTiles[tileX + tileY * mainTileCountX]
 								.locationData[innerOffsetX + dataSize * innerOffsetY].normal;
-						var color = mainTiles[tileX + tileY * mainTileCountX].splatTexture.GetPixel(innerOffsetX, innerOffsetY);
+						var color = mainTiles[tileX + tileY * mainTileCountX].splats[(innerOffsetX-1) + (dataSize-2) * (innerOffsetY - 1)];
 						_initialSplats[x + _controller.collisionBlockVertexCount * y] = new Vector4(color.r, color.g, color.b, color.a);
 							
 

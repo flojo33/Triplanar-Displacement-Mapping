@@ -18,7 +18,7 @@ namespace Terrain
         private Mesh _tempMesh;
         private List<Vector3> _tempVertices, _tempNormals;
         private List<int> _tempTriangles;
-        private List<Vector2> _tempUvs;
+        private List<Vector2> _tempUvs, _tempDataUvs;
         public bool isBuilt;
         private Material _material;
         
@@ -46,6 +46,7 @@ namespace Terrain
             _tempNormals = new List<Vector3>(arraySize);
             _tempTriangles = new List<int>((size - 1) * (size - 1) * 2 * 3);
             _tempUvs = new List<Vector2>(arraySize);
+            _tempDataUvs = new List<Vector2>(arraySize);
             for (var y = 0; y < size; y++)
             {
                 for (var x = 0; x < size; x++)
@@ -53,6 +54,7 @@ namespace Terrain
                     _tempVertices.Add(Vector3.zero);
                     _tempNormals.Add(Vector3.zero);
                     _tempUvs.Add(new Vector2((x + 1.5f) / (size + 2.0f), (y + 1.5f) / (size + 2.0f)));
+                    _tempDataUvs.Add(new Vector2(0,0));
                     if (x >= size - 1 || y >= size - 1) continue;
                     _tempTriangles.Add((x + 0) + size * (y + 0));
                     _tempTriangles.Add((x + 0) + size * (y + 1));
@@ -69,22 +71,7 @@ namespace Terrain
         {
             var meshRenderer = GetComponent<MeshRenderer>();
             meshRenderer.enabled = false;
-            if (data.splatTexture != null)
-            {
-                if (data.splatTexture.GetType() == typeof(RenderTexture))
-                {
-                   // ((RenderTexture)data.splatTexture).Release();
-                }
-                Destroy (data.tessellationTexture);
-            }
-            if (data.tessellationTexture != null)
-            {
-                if (data.tessellationTexture.GetType() == typeof(RenderTexture))
-                {
-                   // ((RenderTexture)data.tessellationTexture).Release();
-                }
-                Destroy (data.tessellationTexture);
-            }
+          
             yield return _terrainController.GetChunkData(_chunkX, _chunkY, this);
             var size = _terrainController.terrainGeneratorSettings.size;
             var dataSize = size + 2;
@@ -95,13 +82,15 @@ namespace Terrain
                 {
                     _tempVertices[x + y * size] = data.locationData[(x + 1) + dataSize * (y + 1)].position;
                     _tempNormals[x + y * size]  = data.locationData[(x + 1) + dataSize * (y + 1)].normal;
+                    _tempDataUvs[x + y * size] = data.locationData[(x + 1) + dataSize * (y + 1)].tessellationStrength;
                 }
             }
 
             _tempMesh.SetVertices(_tempVertices);
             _tempMesh.SetNormals(_tempNormals);
             _tempMesh.SetTriangles(_tempTriangles,0);
-            _tempMesh.SetUVs(0, _tempUvs);
+            _tempMesh.SetUVs(0, _tempDataUvs);
+            _tempMesh.colors = data.splats;
             _tempMesh.RecalculateBounds();
             var meshFilter = GetComponent<MeshFilter>();
             meshFilter.sharedMesh = _tempMesh;
@@ -113,8 +102,6 @@ namespace Terrain
                 _material = _terrainController.GetMaterial();
                 meshRenderer.material = _material;
             }
-            meshRenderer.material.SetTexture(SplatMapId, data.splatTexture);
-            meshRenderer.material.SetTexture(TessellationMapId, data.tessellationTexture);
             isBuilt = true;
         }
     }

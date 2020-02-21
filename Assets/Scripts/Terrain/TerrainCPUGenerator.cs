@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -13,16 +14,7 @@ namespace Terrain
             var settings = controller.terrainGeneratorSettings;
             var dataSize = settings.size + 2;
             var data = new TerrainTileVertexData[dataSize * dataSize];
-            
-            var splatTexture = new Texture2D(dataSize, dataSize)
-            {
-                filterMode = FilterMode.Trilinear, wrapMode = TextureWrapMode.Clamp
-            };
-            
-            var tessellationTexture = new Texture2D(dataSize, dataSize)
-            {
-                filterMode = FilterMode.Trilinear, wrapMode = TextureWrapMode.Clamp
-            };
+            var colors = new Color[settings.size * settings.size];
             
             for (var x = 0; x < dataSize; x++)
             {
@@ -52,12 +44,13 @@ namespace Terrain
                     var remainingStrength = (1 - (snowStrength + sandStrength));
                     
                     data[x + dataSize * y].position = new Vector3((x - 1) * settings.gridSize, height, (y - 1) * settings.gridSize);
-                    var splat = new Color(remainingStrength * temperature, remainingStrength * (1 - temperature),
-                        sandStrength, snowStrength);
-                    splatTexture.SetPixel(x, y, splat);
+                    if (x > 0 && y > 0 && x < settings.size+1 && y < settings.size+1)
+                    {
+                        colors[(x-1) + settings.size * (y-1)] = new Color(remainingStrength * temperature, remainingStrength * (1 - temperature),
+                            sandStrength, snowStrength);
+                    }
                 }
             }
-            splatTexture.Apply();
             
             //Calculate Normals...
             for (var x = 0; x < settings.size; x++)
@@ -79,16 +72,16 @@ namespace Terrain
             {
                 for (var y = 0; y < settings.size; y++)
                 {
-                    var splat = splatTexture.GetPixel(x+1, y+1);
+                    var splat = colors[x + settings.size * y];
                     var normal = data[(x+1) + dataSize * (y+1)].normal;
                     var tessellationStrength = GetTessellationStrength(splat, normal, controller.blendOffset,
                         controller.blendExponent, controller.materialData.GetMaxTessellationStrengthArray());
-                    tessellationTexture.SetPixel(x+1, y+1, new Color(tessellationStrength,0,0,0));
+                    //Debug.Log(tessellationStrength);
+                    data[(x+1) + dataSize * (y+1)].tessellationStrength = new Vector2(tessellationStrength, 0);
                 }
             }
-            tessellationTexture.Apply();
 
-            tile.data = new TerrainTileData {locationData = data, splatTexture = splatTexture, tessellationTexture = tessellationTexture};
+            tile.data = new TerrainTileData {locationData = data, splats = colors};
             yield return null;
         }
         private static float BlendSplat(float input, float factor, float offset)
@@ -135,18 +128,20 @@ namespace Terrain
         private static float GetTessellationStrength(Color splat, Vector3 normal, float blendOffset, float blendExponent, Vector4[] maxTessellationStrengths) {
             var blend = GetTriplanarBlend(normal, blendOffset, blendExponent);
             float m = 0;
+            float maxSplat = Mathf.Max(Mathf.Max(splat.r,splat.g), Mathf.Max(splat.b,splat.a));
+            splat = splat / maxSplat;
             for(var i = 0; i < 4; i++)
             {
-                if (!(splat[i] > 0)) continue;
+                if (!(splat[i] > 0.0f)) continue;
                 if(blend.y != 0)
                 {
                     m = Mathf.Sign(blend.y) > 0
-                        ? Mathf.Max(m, blend.y * maxTessellationStrengths[i].x)
-                        : Mathf.Max(m, blend.y * maxTessellationStrengths[i].z);
+                        ? Mathf.Max(m, blend.y * maxTessellationStrengths[i].x * splat[i])
+                        : Mathf.Max(m, blend.y * maxTessellationStrengths[i].z * splat[i]);
                 }
                 if(blend.x != 0 || blend.z != 0)
                 {
-                    m = Mathf.Max(m, (blend.x + blend.z) * 0.5f * maxTessellationStrengths[i].y);
+                    m = Mathf.Max(m, (blend.x + blend.z) * maxTessellationStrengths[i].y * splat[i]);
                 }
             }
             return m;

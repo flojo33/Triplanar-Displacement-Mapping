@@ -23,10 +23,10 @@ MonoBehaviour:
   metallic: {fileID: 0}
   metallicScale: 0
   detailNormalMap: {fileID: 2800000, guid: 6569d2242762246d3956b31cb5593182, type: 3}
+  detailNormalStrength: 1
   height: {fileID: 2800000, guid: 7d1a4e4d5316845f69c1cbb30b8ac5c9, type: 3}
   heightScale: 0.069
   heightOffset: 0
-  heightPower: 1
   maxTessellation: 0
   displacementOffset: {x: 0, y: 0}
   displacementScale: {x: 1, y: 1}

@@ -45,7 +45,6 @@ Shader "TriplanarDisplacementMapping/TriplanarDisplacementMapping" {
         //--------------------------------------------------------------------------
 		_SplatMap ("Splat Map", 2D) = "white" {}
 		_SplatArray ("Splat Array", 2DArray) = "" {}
-		_TessellationMap ("Tessellation Map", 2D) = "white" {}
     }
 
     SubShader {
@@ -181,6 +180,7 @@ Shader "TriplanarDisplacementMapping/TriplanarDisplacementMapping" {
 			#define UNITY_PBS_USE_BRDF3
 			
 			#define DEFERRED_PASS
+			//#define showTessellationStrength
 			
             //--------------------------------------------------------------------------
             // Define Shader Programs

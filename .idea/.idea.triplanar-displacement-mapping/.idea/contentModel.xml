@@ -7,9 +7,9 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="ButtonInput.cs" t="Include" />
-        <e p="DividerInput.cs" t="Include" />
-        <e p="Node.cs" t="Include" />
+        <e p="FireflyNodes" t="Include">
+          <e p="Node.cs" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="Assets" t="Include">
             <e p="CompactMaterial.cs" t="Include" />
@@ -33,18 +33,19 @@
             <e p="CameraMovement.cs" t="Include" />
             <e p="CameraScreenCapture.cs" t="Include" />
             <e p="KillTimer.cs" t="Include" />
+            <e p="RadiusSpawner.cs" t="Include" />
             <e p="randomLightColor.cs" t="Include" />
-            <e p="ShaderInfo.cs" t="Include" />
             <e p="ShootSphere.cs" t="Include" />
-            <e p="sphereSpawner.cs" t="Include" />
+            <e p="StatDisplay.cs" t="Include" />
             <e p="Sun.cs" t="Include" />
-            <e p="TriplanarProfiler.cs" t="Include" />
-            <e p="TriplanarTestSphere.cs" t="Include" />
             <e p="UI" t="Include">
               <e p="BooleanInput.cs" t="Include" />
+              <e p="ButtonInput.cs" t="Include" />
+              <e p="DividerInput.cs" t="Include" />
               <e p="SettingsPanel.cs" t="Include" />
               <e p="SliderInput.cs" t="Include" />
             </e>
+            <e p="wireframeRenderer.cs" t="Include" />
           </e>
           <e p="Terrain" t="Include">
             <e p="Collisions" t="Include">
@@ -65,7 +66,6 @@
         </e>
         <e p="Shaders" t="Include">
           <e p="DeferredShading.shader" t="Include" />
-          <e p="Derivatives.shader" t="Include" />
           <e p="Processing" t="Include">
             <e p="noise.cginc" t="Include" />
             <e p="TerrainColliderCompute.compute" t="Include" />
@@ -77,20 +77,18 @@
           <e p="Tessellation.cginc" t="Include" />
           <e p="TriplanarDisplacementMapping.shader" t="Include" />
           <e p="TriplanarDisplacementMappingBase.cginc" t="Include" />
-          <e p="TriplanarDisplacementMappingNoTessellation.shader" t="Include" />
           <e p="TriplanarDisplacementMappingShadowCaster.cginc" t="Include" />
           <e p="TriplanarDisplacementMappingWireframe.shader" t="Include" />
           <e p="Utilities.cginc" t="Include" />
         </e>
         <e p="Textures" t="Include">
-          <e p="desert-rocks1-unity" t="Include">
-            <e p="About these PBR files.txt" t="Include" />
+          <e p="3dtextures" t="Include">
+            <e p="CREDIT.txt" t="Include" />
           </e>
-          <e p="StoneIce" t="Include">
-            <e p="About these PBR files.txt" t="Include" />
+          <e p="FreePBR" t="Include">
+            <e p="CREDIT.txt" t="Include" />
           </e>
         </e>
-        <e p="wireframeRenderer.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

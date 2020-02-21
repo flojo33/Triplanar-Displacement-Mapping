@@ -27,7 +27,7 @@ MonoBehaviour:
   height: {fileID: 2800000, guid: c9dcf48a3493be34da46d84fd1eca743, type: 3}
   heightScale: 0.252
   heightOffset: -0.022
-  maxTessellation: 1
+  maxTessellation: 0.352
   displacementOffset: {x: 0, y: 0}
   displacementScale: {x: 0.01, y: 0.01}
   textureOffset: {x: 0, y: 0}

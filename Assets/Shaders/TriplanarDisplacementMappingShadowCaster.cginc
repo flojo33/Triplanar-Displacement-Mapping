@@ -23,7 +23,7 @@ struct VertexData {
 	UNITY_VERTEX_INPUT_INSTANCE_ID
 	float4 vertex : POSITION;
 	float3 normal : NORMAL;
-	float2 uv : TEXCOORD0;
+    float4 splat : COLOR;
 };
 
 //---------------------------------------------------------------------
@@ -48,7 +48,7 @@ Interpolators ShadowVertexProgram (VertexData v) {
     triplanarUv tUv = getTriplanarVertexUv(initialPosition, v.normal);
     
     #ifdef ENABLE_SPLAT
-        float4 splat = SampleSplatTexture(v.uv);
+        float4 splat = v.splat;
     #else
         float4 splat = float4(1,0,0,0);
     #endif

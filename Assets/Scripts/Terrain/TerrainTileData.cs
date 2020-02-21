@@ -8,11 +8,12 @@ namespace Terrain
     public struct TerrainTileData
     {
         public TerrainTileVertexData[] locationData;
-        public Texture2D splatTexture, tessellationTexture;
+        public Color[] splats;
     }
     public struct TerrainTileVertexData
     {
         public Vector3 position;
         public Vector3 normal;
+        public Vector2 tessellationStrength;
     }
 }

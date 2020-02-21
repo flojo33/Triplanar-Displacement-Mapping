@@ -27,7 +27,10 @@ float _divergenceOffset;
 struct VertexData {
     float4 vertex : POSITION;
     float3 normal : NORMAL;
-    float2 uv : TEXCOORD0;
+    float4 splat : COLOR;
+    #ifdef showTessellationStrength
+    float tessellationStrength : TEXCOORD1;
+    #endif
 };
 
 struct Interpolators {
@@ -42,6 +45,13 @@ struct Interpolators {
 	float4 splatWeights : TEXCOORD7;
 	#if defined(VERTEXLIGHT_ON)
 		float3 vertexLightColor : TEXCOORD8;
+        #ifdef showTessellationStrength
+            float tessellationStrength : TEXCOORD9;
+        #endif
+	#else
+        #ifdef showTessellationStrength
+            float tessellationStrength : TEXCOORD9;
+        #endif
 	#endif
 };
 
@@ -76,6 +86,9 @@ void ComputeVertexLightColor (inout Interpolators input) {
 Interpolators VertexProgram (VertexData v) {
     Interpolators i;
     
+    #ifdef showTessellationStrength
+        i.tessellationStrength = v.tessellationStrength;
+    #endif
     v.normal = normalize(v.normal);
     
 	float3 normal = v.normal;
@@ -85,7 +98,7 @@ Interpolators VertexProgram (VertexData v) {
 	
     triplanarUv tUv = getTriplanarVertexUv(i.initialPosition, normal);
     #ifdef ENABLE_SPLAT
-        i.splatWeights = SampleSplatTexture(v.uv);
+        i.splatWeights = v.splat;
     #else
         i.splatWeights = float4(1,0,0,0);
     #endif
@@ -112,7 +125,6 @@ Interpolators VertexProgram (VertexData v) {
 	TRANSFER_SHADOW(i);
 	
 	ComputeVertexLightColor(i);
-	
 	
     return i;
 }
@@ -246,6 +258,10 @@ FragmentOutput FragmentProgram (Interpolators input) {
     
     #ifdef DISPLAY_SAMPLE_COUNT
         color = lerp(float4(0,1,0,0), float4(1,0,0,0), sampleCount/36.0);
+    #endif
+    
+    #ifdef showTessellationStrength
+        color = lerp(float4(0,1,0,0), float4(1,0,0,0), input.tessellationStrength);
     #endif
     
     float3 specularTint;

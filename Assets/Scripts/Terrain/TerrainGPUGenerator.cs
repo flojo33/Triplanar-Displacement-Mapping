@@ -44,10 +44,7 @@ namespace Terrain
             //Debug.Log("StartX: "+coordinate2D.x * (settings.size - 1));
             settings.terrainComputeShader.SetInt("_startX", coordinate2D.x * (settings.size - 1));
             settings.terrainComputeShader.SetInt("_startY", coordinate2D.y * (settings.size - 1));
-            if (tile.data.splatTexture != null)
-            {
-                Object.Destroy(tile.data.splatTexture);
-            }
+            
 
             //Init splat RenderTexture
             var splatTexture = new RenderTexture(dataSize, dataSize, 0)
@@ -58,10 +55,10 @@ namespace Terrain
 
             settings.terrainComputeShader.SetTexture(kernel2, "_splatTexture", splatTexture);
 
-            if (tile.data.tessellationTexture != null)
+            /*if (tile.data.tessellationTexture != null)
             {
                 Object.Destroy(tile.data.tessellationTexture);
-            }
+            }*/
 
             //Init tessellation Texture
             var tessellationTexture = new RenderTexture(dataSize, dataSize, 0)
